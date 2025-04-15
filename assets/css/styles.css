@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  src: url("../fonts/A-OTF Gothic MB101 Pro B.otf") format("opentype");
+  font-family: "gothic-b";
+}
+@font-face {
+  src: url("../fonts/A-OTF-GothicMB101Pro-Heavy.otf") format("opentype");
+  font-family: "gothic-h";
+}
+@font-face {
+  src: url("../fonts/A-OTF Gothic MB101 Pro U.otf") format("opentype");
+  font-family: "gothic-u";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fffad7;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.font-gothic-h {
+  font-family: "gothic-h", sans-serif;
+}
+
+.font-gothic-b {
+  font-family: "gothic-b", sans-serif;
+}
+
+.font-gothic-u {
+  font-family: "gothic-u", sans-serif;
+}
+
+.font-noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-section-rounded-edge {
+  clip-path: ellipse(85% 100% at 50% 100%);
+}
+@media (max-width: 900px) {
+  .hero-section-rounded-edge {
+    clip-path: none;
+  }
+}
+
+.marker-underline {
+  --underline-width: 15;
+  --underline-color: #ffed9f;
+  --underline-offset-y: 5px;
+  background-image: linear-gradient(
+    180deg,
+    var(--underline-color),
+    var(--underline-color)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% calc(var(--underline-width) * 1px);
+  background-position-y: calc(100% - var(--underline-offset-y) * -1);
+}
