@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shigaku | Success</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              1500: { max: "1500px" },
+              1450: { max: "1450px" },
+              1400: { max: "1400px" },
+              1350: { max: "1350px" },
+              1300: { max: "1300px" },
+              1250: { max: "1250px" },
+              1200: { max: "1200px" },
+              1150: { max: "1150px" },
+              1100: { max: "1100px" },
+              1050: { max: "1050px" },
+              1000: { max: "1000px" },
+              950: { max: "950px" },
+              900: { max: "900px" },
+              850: { max: "850px" },
+              800: { max: "800px" },
+              750: { max: "750px" },
+              700: { max: "700px" },
+              650: { max: "650px" },
+              600: { max: "600px" },
+              550: { max: "550px" },
+              500: { max: "500px" },
+              450: { max: "450px" },
+              400: { max: "400px" },
+              350: { max: "350px" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Section 1 -->
+      <section class="py-[40px] relative">
+        <div
+          class="absolute bottom-0 left-0 right-0 h-[82%] 900:h-[86%] bg-[#FFFEF5] z-[10] hero-section-rounded-edge"
+        ></div>
+        <div class="relative wrapper flex flex-col z-[20]">
+          <h2 class="text-[50px] font-[600] text-center text-[#C94605]">
+            お問い合わせ完了
+          </h2>
+          <p class="mt-[100px] text-[35px] text-center font-[600]">
+            お問い合わせありがとうございます
+          </p>
+          <p class="mt-[20px]">
+            お問い合わせ内容確認後、当社よりお返事させていただきます。返答がない場合は大変お手数ですが080-9816-2704までお問い合わせくださいませ。
+          </p>
+          <a
+            href="/"
+            class="text-[30px] 600:text-[24px] bg-white text-[#205ACE] border-[2px] border-[#205ACE] font-[600] rounded-[45px] px-[60px] py-[15px] 600:px-[40px] mt-[20px] mx-auto"
+          >
+            トップページへ戻る
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Scroll to Top Component -->
+    <div id="scroll-to-top-component"></div>
+
+    <!-- Load Components -->
+    <script>
+      // Fetch and inject header component
+      fetch("./components/header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Fetch and inject footer component
+      fetch("./components/footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+      // Fetch and inject scroll to top component
+      fetch("./components/scroll-to-top.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("scroll-to-top-component").innerHTML = data;
+          // Load scroll-to-top.js after the component is injected
+          const script = document.createElement("script");
+          script.src = "assets/js/scroll-to-top.js";
+          document.body.appendChild(script);
+        });
+    </script>
+  </body>
+</html>

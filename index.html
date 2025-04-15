@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shigaku</title>
+    <title>Shigaku | Home</title>
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -831,7 +831,7 @@
                 </span>
               </label>
               <input
-                type="number"
+                type="text"
                 name="希望金額"
                 id="希望金額"
                 class="w-[650px] 1050:w-full h-[50px] px-[20px] focus:outline-none border-[2px] border-transparent focus:border-sky-500"
@@ -904,7 +904,7 @@
 
             <button
               type="submit"
-              class="bg-[#205ACE] text-white text-[30px] font-[600] rounded-[45px] mx-auto px-[60px] py-[20px]"
+              class="bg-[#205ACE] text-white text-[30px] 600:text-[24px] font-[600] rounded-[45px] mx-auto px-[60px] py-[20px] 600:px-[40px] 600:py-[15px]"
             >
               送信内容を確認する
             </button>
@@ -915,9 +915,7 @@
       <!-- 5th Section -->
       <section class="py-[40px] bg-[#FFFEF5]">
         <div class="wrapper flex flex-col">
-          <h2 class="text-[46px] font-[600] text-center 900:hidden">
-            会社概要
-          </h2>
+          <h2 class="text-[46px] font-[600] text-center">会社概要</h2>
           <div class="flex flex-col border-[2px] border-[#E6E6E6] mt-[20px]">
             <div class="flex 900:flex-col border-b-[2px] border-[#E6E6E6]">
               <div
@@ -977,8 +975,8 @@
     <!-- Footer Component -->
     <div id="footer"></div>
 
-    <!-- Main Script -->
-    <script src="assets/js/index.js"></script>
+    <!-- Scroll to Top Component -->
+    <div id="scroll-to-top-component"></div>
 
     <!-- Main Script -->
     <script src="assets/js/index.js"></script>
@@ -1003,6 +1001,17 @@
       fetch("./components/footer.html")
         .then((response) => response.text())
         .then((data) => (document.getElementById("footer").innerHTML = data));
+
+      // Fetch and inject scroll to top component
+      fetch("./components/scroll-to-top.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("scroll-to-top-component").innerHTML = data;
+          // Load scroll-to-top.js after the component is injected
+          const script = document.createElement("script");
+          script.src = "assets/js/scroll-to-top.js";
+          document.body.appendChild(script);
+        });
     </script>
   </body>
 </html>
