@@ -49,16 +49,16 @@
       };
     </script>
   </head>
-  <body>
+  <body class="flex flex-col">
     <!-- Header Component -->
     <div id="header"></div>
 
     <!-- Main Content -->
-    <main>
+    <main class="min-h-[calc(100vh-136px-60px)] flex flex-col">
       <!-- Section 1 -->
-      <section class="py-[40px] relative">
+      <section class="py-[40px] relative flex-1">
         <div
-          class="absolute bottom-0 left-0 right-0 h-[82%] 900:h-[86%] bg-[#FFFEF5] z-[10] hero-section-rounded-edge"
+          class="absolute bottom-0 left-0 right-0 h-[88%] 900:h-[86%] bg-[#FFFEF5] z-[10] hero-section-rounded-edge"
         ></div>
         <div class="relative wrapper flex flex-col z-[20]">
           <h2 class="text-[50px] font-[600] text-center text-[#C94605]">
@@ -68,7 +68,11 @@
             お問い合わせありがとうございます
           </p>
           <p class="mt-[20px]">
-            お問い合わせ内容確認後、当社よりお返事させていただきます。返答がない場合は大変お手数ですが080-9816-2704までお問い合わせくださいませ。
+            お問い合わせ内容確認後、当社よりお返事させていただきます。返答がない場合は大変お手数ですが<a
+              href="tel:080-9816-2704"
+              class="underline hover:opacity-70 transition-all duration-300"
+              >080-9816-2704</a
+            >までお問い合わせくださいませ。
           </p>
           <a
             href="/"

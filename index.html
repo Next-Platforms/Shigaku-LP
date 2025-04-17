@@ -364,7 +364,7 @@
             <img
               src="./assets/images/figure_img@2x.webp"
               alt="figure_img"
-              class="mx-auto w-full max-w-[790px] mt-[40px] 900:mt-[20px]"
+              class="mx-auto w-full max-w-[790px] mt-[40px] 900:mt-[20px] figure-modal-trigger"
             />
             <p class="text-center hidden 900:block text-[18px] mt-[20px]">
               ※画像タップで拡大表示されます！
@@ -675,12 +675,10 @@
               <p class="text-[28px] 900:text-[26px] font-[600] text-center">
                 お電話でのお問い合わせ
               </p>
-              <a
-                href="tel:011-211-0315"
-                class="flex flex-col items-end 900:items-center w-max hover:opacity-70 transition-all duration-300"
-              >
-                <div
-                  class="flex items-center gap-[5px] text-[#205ACE] font-bold font-open-sans text-[52px] 900:text-[38px]"
+              <div class="flex flex-col items-end 900:items-center w-max">
+                <a
+                  href="tel:011-211-0315"
+                  class="flex items-center gap-[5px] text-[#205ACE] font-bold font-open-sans text-[52px] 900:text-[38px] hover:opacity-70 transition-all duration-300"
                 >
                   <img
                     src="./assets/images/icon-tel.svg"
@@ -688,16 +686,19 @@
                     class="w-[40px] h-[40px] 900:w-[30px] 900:h-[30px]"
                   />
                   <span>011-211-0315</span>
-                </div>
+                </a>
                 <div class="flex items-center gap-[10px] 600:text-[18px]">
                   <span class="font-[600]">お電話受付時間</span>
                   <span>平日9：00～17：00</span>
                 </div>
                 <span class="600:text-[18px]"
-                  >時間外・土日祝日は<span class="underline">080-9816-2704</span
+                  >時間外・土日祝日は<a
+                    href="tel:080-9816-2704"
+                    class="underline hover:opacity-70 transition-all duration-300"
+                    >080-9816-2704</a
                   >へ</span
                 >
-              </a>
+              </div>
             </div>
             <div
               class="flex-1 bg-[#1CCC12] p-[20px] 600:px-[10px] text-white flex 1200:flex-col items-center justify-center gap-[20px]"
@@ -713,7 +714,7 @@
                 </p>
                 <a
                   class="border-[2px] border-white text-[22px] font-[600] px-[30px] 600:px-[20px] py-[10px] 600:py-[5px] rounded-[40px] flex items-center gap-[10px] min-w-max hover:opacity-70 transition-all duration-300"
-                  href="https://line.me/R/ti/p/%400112110315"
+                  href="https://line.me/R/ti/p/@454ihgwt"
                   target="_blank"
                 >
                   <span>お友達追加はこちら！</span>
@@ -932,7 +933,12 @@
             <div
               class="flex items-center justify-center flex-wrap gap-[5px] text-[24px]"
             >
-              <input type="checkbox" id="privacy-policy" required />
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                required
+                class="w-[20px] h-[20px] cursor-pointer"
+              />
               <a
                 href="/privacy-policy.html"
                 class="underline hover:opacity-70 transition-all duration-300"
@@ -988,7 +994,14 @@
               >
                 電話番号
               </div>
-              <div class="flex-1 p-[20px]">011-211-0315</div>
+              <div class="flex-1 p-[20px]">
+                <a
+                  href="tel:011-211-0315"
+                  class="underline hover:opacity-70 transition-all duration-300"
+                >
+                  011-211-0315
+                </a>
+              </div>
             </div>
             <div class="flex 900:flex-col border-b-[2px] border-[#E6E6E6]">
               <div
@@ -1025,13 +1038,15 @@
     <!-- Scroll to Top Component -->
     <div id="scroll-to-top-component"></div>
 
+    <!-- Image Modal Component -->
+    <div id="image-modal-component"></div>
+
     <!-- Main Script -->
     <script src="./assets/js/index.js"></script>
 
     <!-- Header Script -->
     <script src="./assets/js/header.js"></script>
 
-    <!-- Load Components -->
     <script>
       // Fetch and inject header component
       fetch("./components/header.html")
@@ -1060,6 +1075,17 @@
           // Load scroll-to-top.js after the component is injected
           const script = document.createElement("script");
           script.src = "assets/js/scroll-to-top.js";
+          document.body.appendChild(script);
+        });
+
+      // Fetch and inject image modal component
+      fetch("./components/image-modal.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("image-modal-component").innerHTML = data;
+          // Initialize modal after component is loaded
+          const script = document.createElement("script");
+          script.src = "assets/js/image-modal.js";
           document.body.appendChild(script);
         });
     </script>
