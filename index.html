@@ -78,36 +78,47 @@
       <div class="contact"></div>
 
       <!-- 1st Section -->
-      <section class="py-[40px] bg-[#FFFEF5]">
-        <div class="wrapper">
+      <section
+        class="pt-[calc(80px-40px)] pb-[80px] 900:py-[40px] bg-[#FFFEF5]"
+      >
+        <div class="wrapper flex flex-col">
           <img
-            src="./assets/images/101.svg"
-            alt="101"
-            class="900:hidden max-w-[860px] mx-auto"
+            src="./assets/images/about_title_pc@2x.webp"
+            class="900:hidden max-w-[653px] mx-auto relative top-[40px]"
           />
           <img
-            src="./assets/images/102.svg"
-            alt="102"
-            class="hidden 900:block max-w-[340px] mx-auto"
+            src="./assets/images/about_title_sp@2x.webp"
+            class="hidden 900:block max-w-[340px] mx-auto relative top-[40px]"
           />
+          <div class="flex w-full max-w-[878px] mx-auto relative">
+            <img
+              src="./assets/images/about_answer_img@2x.webp"
+              class="w-full max-w-[124px] z-[2]"
+            />
+            <div
+              class="absolute inset-x-0 top-[70%] translate-y-[-70%] 600:top-[100%] 600:translate-y-[-100%]"
+            >
+              <h2
+                class="text-[#205ACE] text-[35px] 900:text-[23px] font-[700] bg-[#FFED9F] ml-[64px] pl-[60px] pr-[20px] py-[8px] z-[1]"
+              >
+                経済産業省が推奨している資金調達方法です！
+              </h2>
+            </div>
+          </div>
           <p class="text-[24px] mt-[20px] max-w-[860px] mx-auto">
             経済産業省中小企業庁では、中小企業者が不動産担保に過度に依存せずに資金調達できるよう、
             <span class="font-[600] marker-underline">
               売掛債権担保融資保証制度を創設し、普及を進めています。
             </span>
           </p>
-          <img
-            src="./assets/images/103.svg"
-            alt="103"
-            class="max-w-[700px] mx-auto mt-[60px] 900:hidden"
-          />
-          <img
-            src="./assets/images/104.svg"
-            alt="104"
-            class="hidden 900:block max-w-[330px] mx-auto mt-[40px]"
-          />
+          <h2
+            class="text-[46px] 900:text-[40px] 900:flex 900:flex-col font-[700] text-center mt-[40px]"
+          >
+            <span class="text-[#C94605]">資金繰りのお悩み</span
+            ><span>ありませんか？</span>
+          </h2>
           <div
-            class="bg-white rounded-[40px] border-[#FFED9F] border-[5px] px-[40px] py-[20px] mt-[40px] max-w-[760px] mx-auto"
+            class="bg-white rounded-[40px] border-[#FFED9F] border-[5px] px-[80px] py-[50px] 900:py-[40px] 900:px-[20px] mt-[40px] max-w-[760px] mx-auto"
           >
             <ul class="flex flex-col gap-[20px] max-w-max mx-auto">
               <li>
@@ -118,7 +129,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     売掛先からの<span class="marker-underline"
                       >入金サイトが長すぎる</span
@@ -134,7 +145,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     税金滞納しているから<span class="marker-underline"
                       >融資が受けられない</span
@@ -150,7 +161,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     売掛先からの<span class="marker-underline"
                       >入金ズレが起こってしまった</span
@@ -166,7 +177,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     売上激減で<span class="marker-underline"
                       >キャッシュが追いつかない</span
@@ -182,7 +193,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     銀行融資じゃ<span class="marker-underline"
                       >間に合わない</span
@@ -198,7 +209,7 @@
                     class="w-[30px] h-[30px]"
                   />
                   <p
-                    class="text-[28px] 900:text-[24px] font-[600] leading-[1.2]"
+                    class="text-[28px] 900:text-[24px] font-[700] leading-[1.2]"
                   >
                     売掛はたくさんあるのに<span class="marker-underline"
                       >キャッシュがない</span
@@ -209,15 +220,34 @@
             </ul>
           </div>
           <img
-            src="./assets/images/105.png"
-            alt="105"
-            class="mx-auto max-w-[900px] w-full mx-auto mt-[40px] 900:hidden"
+            src="./assets/images/entrust_title_img@2x.webp"
+            class="mx-auto max-w-[443px] w-full mx-auto mt-[40px]"
           />
-          <img
-            src="./assets/images/106.png"
-            alt="106"
-            class="hidden 900:block max-w-[340px] w-full mx-auto mt-[40px]"
-          />
+          <h3
+            class="text-[56px] 900:text-[39px] text-[#205ACE] font-[700] text-center"
+          >
+            志岳<span class="text-[44px] 900:text-[27px]">に</span
+            ><br class="hidden 900:block" />お任せください！<br />貴社<span
+              class="text-[44px] 900:text-[27px]"
+              >の</span
+            >売掛金<span class="text-[44px] 900:text-[27px]">を</span
+            ><br class="hidden 900:block" /><span
+              class="bg-[#FFED9F] pb-[2px] px-[4px]"
+              >高額買取</span
+            >いたします
+          </h3>
+          <div
+            class="flex flex-wrap items-center justify-center gap-[10px] mt-[20px]"
+          >
+            <img
+              src="./assets/images/entrust_img@2x.webp"
+              class="max-w-[510px] w-full"
+            />
+            <img
+              src="./assets/images/procurement_img@2x.webp"
+              class="max-w-[385px] w-full 600:max-w-[249px]"
+            />
+          </div>
         </div>
       </section>
 
@@ -225,7 +255,7 @@
       <div class="contact"></div>
 
       <!-- 2nd Section -->
-      <section class="py-[40px] bg-[#FFFEF5]">
+      <section class="py-[80px] 900:py-[40px] bg-[#FFFEF5]">
         <div class="wrapper flex flex-col">
           <img
             src="./assets/images/point_title_pc.svg"
@@ -239,13 +269,13 @@
           />
           <div class="flex 900:flex-col gap-[20px] mt-[20px] mx-auto">
             <div
-              class="w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[600] text-[26px]"
+              class="bg-white w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[700] text-[26px]"
             >
               <span>臨機応変に</span>
               <span>対応してくれる</span>
             </div>
             <div
-              class="w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[600] text-[26px]"
+              class="bg-white w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[700] text-[26px]"
             >
               <span>親身に相談に</span>
               <span>乗ってくれる</span>
@@ -255,59 +285,61 @@
             class="flex 900:flex-col gap-[20px] mt-[40px] 900:mt-[20px] mx-auto"
           >
             <div
-              class="w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[600] text-[26px]"
+              class="bg-white w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[700] text-[26px]"
             >
               <span>迅速に</span>
               <span>対応してくれる</span>
             </div>
             <div
-              class="w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[600] text-[26px]"
+              class="bg-white w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[700] text-[26px]"
             >
               <span>コンサルティング力の</span>
               <span>高さ</span>
             </div>
             <div
-              class="w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[600] text-[26px]"
+              class="bg-white w-[330px] max-w-[330px] 1100:w-[250px] 1100:max-w-[250px] 600:!w-[330px] 600:!max-w-[600px] border-[3px] border-[#205ACE] rounded-[12px] p-[20px] flex flex-col items-center justify-center text-center font-[700] text-[26px]"
             >
               <span>申込みから</span>
               <span>折返しの早さ</span>
             </div>
           </div>
-          <ul class="flex flex-col gap-[20px] max-w-max mx-auto mt-[40px]">
-            <li>
+          <ul
+            class="flex flex-col gap-[20px] max-w-max mx-auto mt-[60px] mb-[50px] 900:my-[40px]"
+          >
+            <li class="mx-auto 900:mx-0">
               <div class="flex gap-[15px]">
                 <img
                   src="./assets/images/check.svg"
                   alt="check"
                   class="w-[40px] h-[40px] 900:w-[30px] 900:h-[30px]"
                 />
-                <p class="text-[37px] 900:text-[30px] font-[600] leading-[1.2]">
+                <p class="text-[37px] 900:text-[30px] font-[700] leading-[1.2]">
                   <span class="marker-underline"> 保証人や担保の準備は </span>
                   <span class="text-[#C94605] marker-underline">不要</span>
                 </p>
               </div>
             </li>
-            <li>
+            <li class="mx-auto 900:mx-0">
               <div class="flex gap-[15px]">
                 <img
                   src="./assets/images/check.svg"
                   alt="check"
                   class="w-[40px] h-[40px] 900:w-[30px] 900:h-[30px]"
                 />
-                <p class="text-[37px] 900:text-[30px] font-[600] leading-[1.2]">
+                <p class="text-[37px] 900:text-[30px] font-[700] leading-[1.2]">
                   <span class="marker-underline">信用情報への影響 </span>
                   <span class="text-[#C94605] marker-underline">一切なし</span>
                 </p>
               </div>
             </li>
-            <li>
+            <li class="mx-auto 900:mx-0">
               <div class="flex gap-[15px]">
                 <img
                   src="./assets/images/check.svg"
                   alt="check"
                   class="w-[40px] h-[40px] 900:w-[30px] 900:h-[30px]"
                 />
-                <p class="text-[37px] 900:text-[30px] font-[600] leading-[1.2]">
+                <p class="text-[37px] 900:text-[30px] font-[700] leading-[1.2]">
                   <span class="marker-underline">
                     赤字や税金・社会保険滞納での
                   </span>
@@ -317,7 +349,7 @@
             </li>
           </ul>
           <div
-            class="bg-white rounded-[30px] border-[#FFED9F] border-[5px] px-[40px] 900:px-[20px] py-[20px] mt-[40px] flex flex-col"
+            class="bg-white rounded-[30px] border-[#FFED9F] border-[5px] p-[40px] 900:p-[20px] flex flex-col"
           >
             <img
               src="./assets/images/figure_title_pc@2x.webp"
@@ -338,7 +370,7 @@
               ※画像タップで拡大表示されます！
             </p>
             <div
-              class="max-w-[850px] mx-auto text-[24px] mt-[40px] 900:mt-[20px]"
+              class="max-w-[850px] mx-auto text-[24px] mt-[40px] 900:mt-[20px] leading-[1.96]"
             >
               <p>
                 2社間ファクタリングは、ご依頼主とファクタリング会社である当社の2社間のみでの取引になります。そのため売掛金（売掛債権）を譲渡しても、売掛先に債権譲渡の通知をする必要はありません。また、弊社から売掛先へ連絡することもございません。売掛金を気にする必要がないため、売掛金（売掛債務）の現金化をスムーズに行えます。
@@ -360,11 +392,11 @@
               class="w-[200px]"
             />
             <div class="flex flex-col 900:items-center gap-[20px]">
-              <img
-                src="./assets/images/title-900.png"
-                alt="title"
-                class="w-full max-w-[368px] 900:max-w-[288px]"
-              />
+              <h3
+                class="text-[46px] 900:text-[36px] text-[#205ACE] font-[700] 900:text-center"
+              >
+                売掛先の<span class="marker-underline">承認不要</span>
+              </h3>
               <div class="text-[24px]">
                 <p>売掛先の承諾を得ずにファクタリングを利用できるため、</p>
                 <p>今後のお取引にマイナスの影響が出ることはありません。</p>
@@ -374,16 +406,14 @@
           <div
             class="mt-[40px] flex flex-col items-center justify-center mx-auto"
           >
-            <img
-              src="./assets/images/title-901.png"
-              alt="title"
-              class="w-full max-w-[644px] 900:hidden"
-            />
-            <img
-              src="./assets/images/title-902.png"
-              alt="title"
-              class="900:block hidden w-full max-w-[288px] mx-auto"
-            />
+            <h3
+              class="text-[46px] 900:text-[36px] text-[#205ACE] font-[700] 900:text-center"
+            >
+              手間が少なく<br class="hidden 900:block" /><span
+                class="marker-underline"
+                >即日対応</span
+              >もできる
+            </h3>
             <p class="text-[24px] 900:mt-[20px] font-[600] text-center">
               必要書類は以下の4つ！
             </p>
@@ -398,7 +428,7 @@
                   alt="icon-necessary01"
                   class="w-[125px] mx-auto"
                 />
-                <p class="text-[30px] font-[600] text-center mt-[10px]">
+                <p class="text-[30px] font-[700] text-center mt-[10px]">
                   身分証明書
                 </p>
                 <div class="bg-[#E6E6E6] h-[1px] w-[220px] my-[10px]"></div>
@@ -414,7 +444,7 @@
                   alt="icon-necessary01"
                   class="w-[125px] mx-auto"
                 />
-                <p class="text-[30px] font-[600] text-center mt-[10px]">
+                <p class="text-[30px] font-[700] text-center mt-[10px]">
                   銀行通帳
                 </p>
                 <div class="bg-[#E6E6E6] h-[1px] w-[220px] my-[10px]"></div>
@@ -430,7 +460,7 @@
                   alt="icon-necessary01"
                   class="w-[125px] mx-auto"
                 />
-                <p class="text-[30px] font-[600] text-center mt-[10px]">
+                <p class="text-[30px] font-[700] text-center mt-[10px]">
                   請求書
                 </p>
                 <div class="bg-[#E6E6E6] h-[1px] w-[220px] my-[10px]"></div>
@@ -446,7 +476,7 @@
                   alt="icon-necessary01"
                   class="w-[125px] mx-auto"
                 />
-                <p class="text-[30px] font-[600] text-center mt-[10px]">
+                <p class="text-[30px] font-[700] text-center mt-[10px]">
                   決算書
                 </p>
                 <div class="bg-[#E6E6E6] h-[1px] w-[220px] my-[10px]"></div>
@@ -469,7 +499,7 @@
             />
             <div class="flex flex-col gap-[40px] 900:gap-[20px] mt-[20px]">
               <div
-                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] p-[20px]"
+                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] py-[40px] px-[30px] 900:px-[20px]"
               >
                 <img
                   src="./assets/images/step01.svg"
@@ -477,7 +507,7 @@
                   class="w-[260px]"
                 />
                 <div class="flex-1 flex flex-col">
-                  <p class="text-[30px] font-[600]">
+                  <p class="text-[30px] font-[700]">
                     お申し込み・必要書類の提出
                   </p>
                   <div class="bg-[#F2F2F2] h-[1px] w-full my-[10px]"></div>
@@ -488,7 +518,7 @@
                 </div>
               </div>
               <div
-                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] p-[20px]"
+                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] py-[40px] px-[30px] 900:px-[20px]"
               >
                 <img
                   src="./assets/images/step02.svg"
@@ -496,7 +526,7 @@
                   class="w-[260px]"
                 />
                 <div class="flex-1 flex flex-col">
-                  <p class="text-[30px] font-[600]">ヒアリング・審査</p>
+                  <p class="text-[30px] font-[700]">ヒアリング・審査</p>
                   <div class="bg-[#F2F2F2] h-[1px] w-full my-[10px]"></div>
                   <p class="text-[24px]">簡単なヒアリングを行います。</p>
                   <p class="text-[24px]">
@@ -505,7 +535,7 @@
                 </div>
               </div>
               <div
-                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] p-[20px]"
+                class="flex 900:flex-col items-center gap-[20px] bg-white border border-[#FFED9F] rounded-[8px] py-[40px] px-[30px] 900:px-[20px]"
               >
                 <img
                   src="./assets/images/step03.svg"
@@ -513,7 +543,7 @@
                   class="w-[260px]"
                 />
                 <div class="flex-1 flex flex-col">
-                  <p class="text-[30px] font-[600]">ご契約・お支払い</p>
+                  <p class="text-[30px] font-[700]">ご契約・お支払い</p>
                   <div class="bg-[#F2F2F2] h-[1px] w-full my-[10px]"></div>
                   <p class="text-[24px]">
                     見積もり内容にご承認いただけましたら、契約締結となります。
@@ -530,7 +560,7 @@
       <div class="contact"></div>
 
       <!-- 3rd Section -->
-      <section class="py-[40px] 900:py-[20px] bg-[#FFFEF5]">
+      <section class="py-[80px] 900:py-[40px] bg-[#FFFEF5]">
         <div class="wrapper flex flex-col gap-[20px]">
           <h2
             class="text-[46px] 900:text-[40px] font-[600] text-center max-w-[850px] mx-auto"
@@ -626,7 +656,7 @@
       </section>
 
       <!-- 4th Section -->
-      <section class="py-[40px] bg-[#aad5f9]">
+      <section class="py-[80px] 900:py-[40px] bg-[#aad5f9]">
         <div class="wrapper flex flex-col">
           <h2 class="text-[46px] font-[600] text-center 900:hidden">
             お問い合わせはこちら！
@@ -647,7 +677,7 @@
               </p>
               <a
                 href="tel:011-211-0315"
-                class="flex flex-col items-end 900:items-center w-max"
+                class="flex flex-col items-end 900:items-center w-max hover:opacity-70 transition-all duration-300"
               >
                 <div
                   class="flex items-center gap-[5px] text-[#205ACE] font-bold font-open-sans text-[52px] 900:text-[38px]"
@@ -681,7 +711,7 @@
                   LINEでお問い合わせ
                 </p>
                 <a
-                  class="border-[2px] border-white text-[22px] font-[600] px-[30px] 600:px-[20px] py-[10px] 600:py-[5px] rounded-[40px] flex items-center gap-[10px] min-w-max"
+                  class="border-[2px] border-white text-[22px] font-[600] px-[30px] 600:px-[20px] py-[10px] 600:py-[5px] rounded-[40px] flex items-center gap-[10px] min-w-max hover:opacity-70 transition-all duration-300"
                   href="https://line.me/R/ti/p/%400112110315"
                   target="_blank"
                 >
@@ -711,7 +741,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">お名前</span>
-                <span class="bg-[#C94605] text-[16px] text-white p-[5px]">
+                <span
+                  class="bg-[#C94605] text-[16px] text-white pt-[2px] px-[5px] pb-[3px]"
+                >
                   必須
                 </span>
               </label>
@@ -734,7 +766,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">ふりがな</span>
-                <span class="bg-[#C94605] text-[16px] text-white p-[5px]">
+                <span
+                  class="bg-[#C94605] text-[16px] text-white pt-[2px] px-[5px] pb-[3px]"
+                >
                   必須
                 </span>
               </label>
@@ -757,7 +791,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">会社名</span>
-                <span class="bg-[#C94605] text-[16px] text-white p-[5px]">
+                <span
+                  class="bg-[#C94605] text-[16px] text-white pt-[2px] px-[5px] pb-[3px]"
+                >
                   必須
                 </span>
               </label>
@@ -780,7 +816,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">電話番号</span>
-                <span class="bg-[#C94605] text-[16px] text-white p-[5px]">
+                <span
+                  class="bg-[#C94605] text-[16px] text-white pt-[2px] px-[5px] pb-[3px]"
+                >
                   必須
                 </span>
               </label>
@@ -803,7 +841,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">メールアドレス</span>
-                <span class="bg-[#C94605] text-[16px] text-white p-[5px]">
+                <span
+                  class="bg-[#C94605] text-[16px] text-white pt-[2px] px-[5px] pb-[3px]"
+                >
                   必須
                 </span>
               </label>
@@ -826,7 +866,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">希望金額</span>
-                <span class="bg-white text-[16px] text-[#033687] p-[5px]">
+                <span
+                  class="bg-white text-[16px] text-[#033687] pt-[2px] px-[5px] pb-[3px]"
+                >
                   任意
                 </span>
               </label>
@@ -848,7 +890,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">買取希望日(入金日)</span>
-                <span class="bg-white text-[16px] text-[#033687] p-[5px]">
+                <span
+                  class="bg-white text-[16px] text-[#033687] pt-[2px] px-[5px] pb-[3px]"
+                >
                   任意
                 </span>
               </label>
@@ -870,7 +914,9 @@
                 class="flex items-center justify-end 1050:justify-start gap-[20px] w-[280px] 1050:w-full font-bold"
               >
                 <span class="text-[24px]">お問い合わせ内容</span>
-                <span class="bg-white text-[16px] text-[#033687] p-[5px]">
+                <span
+                  class="bg-white text-[16px] text-[#033687] pt-[2px] px-[5px] pb-[3px]"
+                >
                   任意
                 </span>
               </label>
@@ -888,7 +934,7 @@
               <input type="checkbox" id="privacy-policy" required />
               <a
                 href="/privacy-policy.html"
-                class="underline"
+                class="underline hover:opacity-70 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -904,7 +950,7 @@
 
             <button
               type="submit"
-              class="bg-[#205ACE] text-white text-[30px] 600:text-[24px] font-[600] rounded-[45px] mx-auto px-[60px] py-[20px] 600:px-[40px] 600:py-[15px]"
+              class="bg-[#205ACE] text-white text-[30px] 600:text-[24px] font-[600] rounded-[45px] mx-auto px-[60px] py-[20px] 600:px-[40px] 600:py-[15px] hover:opacity-70 transition-all duration-300"
             >
               送信内容を確認する
             </button>
@@ -913,7 +959,7 @@
       </section>
 
       <!-- 5th Section -->
-      <section class="py-[40px] bg-[#FFFEF5]">
+      <section class="py-[80px] 900:py-[40px] bg-[#FFFEF5]">
         <div class="wrapper flex flex-col">
           <h2 class="text-[46px] font-[600] text-center">会社概要</h2>
           <div class="flex flex-col border-[2px] border-[#E6E6E6] mt-[20px]">
@@ -979,7 +1025,10 @@
     <div id="scroll-to-top-component"></div>
 
     <!-- Main Script -->
-    <script src="assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+    <!-- Header Script -->
+    <script src="./assets/js/header.js"></script>
 
     <!-- Load Components -->
     <script>

@@ -1,7 +1,7 @@
 <!-- Scroll to Top Button -->
 <button
   id="scroll-to-top"
-  class="fixed bottom-[40px] right-[40px] w-[70px] h-[70px] bg-white border-[2px] border-[#033687] rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-[100] 900:bottom-[20px] 900:right-[20px] 900:w-[50px] 900:h-[50px]"
+  class="fixed bottom-[40px] right-[40px] w-[70px] h-[70px] bg-white border-[2px] border-[#033687] rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 z-[100] 900:bottom-[20px] 900:right-[20px] 900:w-[50px] 900:h-[50px]"
 >
   <img src="../assets/images/arrow-up.svg" class="w-[22px] h-[13px]" />
 </button>
@@ -10,5 +10,9 @@
   #scroll-to-top.visible {
     opacity: 1;
     visibility: visible;
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
   }
 </style>

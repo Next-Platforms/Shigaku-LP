@@ -40,6 +40,14 @@ a {
   cursor: pointer;
 }
 
+a,
+button {
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 ul {
   list-style: none;
 }
