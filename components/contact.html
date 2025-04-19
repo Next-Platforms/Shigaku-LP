@@ -31,11 +31,9 @@
     <div
       class="flex 900:flex-col flex-wrap items-center justify-center gap-[20px] 900:mt-[20px]"
     >
-      <a
-        href="tel:011-211-0315"
-        class="flex flex-col items-end min-w-max hover:opacity-70 transition-all duration-300"
-      >
-        <div
+      <div class="flex flex-col items-end min-w-max">
+        <a
+          href="tel:011-211-0315"
           class="flex items-center gap-[5px] text-[#205ACE] font-bold font-open-sans text-[52px] 900:text-[44px]"
         >
           <img
@@ -44,16 +42,19 @@
             class="w-[40px] h-[40px] 900:w-[30px] 900:h-[30px]"
           />
           <span>011-211-0315</span>
-        </div>
+        </a>
         <div class="flex items-center gap-[10px]">
           <span class="font-[600]">お電話受付時間</span>
           <span>平日9：00～17：00</span>
         </div>
         <span
-          >時間外・土日祝日は<span class="underline">080-9816-2704</span
+          >時間外・土日祝日は<a
+            href="tel:080-9816-2704"
+            class="underline hover:opacity-70 transition-all duration-300"
+            >080-9816-2704</a
           >へ</span
         >
-      </a>
+      </div>
       <a
         class="bg-[#1CCC12] text-[22px] text-white font-[600] px-[30px] py-[15px] rounded-[40px] flex items-center gap-[10px] min-w-max hover:opacity-70 transition-all duration-300"
         href="https://line.me/R/ti/p/@454ihgwt"
